@@ -1,0 +1,1 @@
+"${was_home}/bin/ws_ant.sh" -f  "${wsant_build_file}"
