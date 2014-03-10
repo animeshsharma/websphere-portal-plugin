@@ -1,0 +1,4 @@
+maven.websphere.plugin
+maven.websphere.plugin.cli
+maven.websphere.plugin.model
+maven.websphere.plugin.utils
