@@ -1,1 +1,0 @@
-"${was_home}\bin\ws_ant.bat" -f "${wsant_build_file}"
