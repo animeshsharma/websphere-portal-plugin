@@ -49,7 +49,7 @@ import org.apache.maven.plugins.annotations.Parameter;
  * <i>mvn clean websphere:deploy-ear -Dserver=was_box1
  * -DwasHome=C:\IBM\WebSphere\AppServer -DinstallableApp
  * =http://stype-nexus:8081/nexus/content/repositories/releases
- * /com/xyz/BusinessDomainServices /9.34.87/BusinessDomainServices-9.34.87.ear
+ * /com/xyz/BusinessDomainServices/9.34.87/BusinessDomainServices-9.34.87.ear
  * -DappName=BusinessDomainServices</i> <br/>
  * 
  * 
@@ -57,7 +57,7 @@ import org.apache.maven.plugins.annotations.Parameter;
  * <br/>
  * <br/>
  * 
- * @author <a href="mailto:Juanyong.zhang@carefirst.com">Juanyong Zhang</a><br/>
+ * @author <a href="mailto:Juanyong.zhang@gmail.com">Juanyong Zhang</a><br/>
  */
 
 @Mojo(name = "deploy-ear", threadSafe = true)

@@ -51,7 +51,7 @@ import org.apache.maven.plugins.annotations.Parameter;
  * /9.34.87/ptl1-9.34.87.war,http://stype-nexus:8081/nexus/content
  * /repositories/releases/com/xyz/ptl2/9.34.87/ptl2-9.34.87.war</i> <br/>
  * 
- * @author <a href="mailto:Juanyong.zhang@carefirst.com">Juanyong Zhang</a><br/>
+ * @author <a href="mailto:Juanyong.zhang@gmail.com">Juanyong Zhang</a><br/>
  */
 @Mojo(name = "deploy-multi-portlet", threadSafe = true)
 public class DeployMultiPortletMojo extends

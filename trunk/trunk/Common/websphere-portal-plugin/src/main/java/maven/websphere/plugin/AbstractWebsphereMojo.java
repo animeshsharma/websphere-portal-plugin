@@ -45,7 +45,7 @@ import org.sonatype.plexus.components.sec.dispatcher.SecDispatcher;
 /**
  * Accommodate MAVEN attribute, and common method which needs MAVEN attributes
  * 
- * @author <a href="mailto:Juanyong.zhang@carefirst.com">Juanyong Zhang</a><br/>
+ * @author <a href="mailto:Juanyong.zhang@gmail.com">Juanyong Zhang</a><br/>
  */
 public abstract class AbstractWebsphereMojo extends AbstractMojo {
 

@@ -12,7 +12,7 @@ import org.apache.commons.lang.StringUtils;
 /**
  * Mapping the name/values for FTL params and settings.xml.
  * 
- * @author <a href="mailto:Juanyong.zhang@carefirst.com">Juanyong Zhang</a><br/>
+ * @author <a href="mailto:Juanyong.zhang@gmail.com">Juanyong Zhang</a><br/>
  */
 public class XMLAccessNameValuePairs {
 	private static final String FTL_VAL_JAVA_HOME = "java_home";

@@ -3,7 +3,7 @@ package maven.websphere.plugin.utils;
 /**
  * Defines all the constants.
  * 
- * @author <a href="mailto:Juanyong.zhang@carefirst.com">Juanyong Zhang</a><br/>
+ * @author <a href="mailto:Juanyong.zhang@gmail.com">Juanyong Zhang</a><br/>
  */
 public interface Constants {
 	public static final String MAVEN_WEBSPHERE_PLUGIN = "websphere-portal-plugin";

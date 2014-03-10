@@ -24,7 +24,7 @@ import freemarker.template.TemplateException;
 /**
  * Utility class to process freemarker templates.
  * 
- * @author : <a href="mailto:Juanyong.zhang@carefirst.com">Juanyong.Zhang</a><br/>
+ * @author : <a href="mailto:Juanyong.zhang@gmail.com">Juanyong.Zhang</a><br/>
  */
 public class FreemarkerHelper {
 	public static void process(InputStream template,

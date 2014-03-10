@@ -30,7 +30,7 @@ import org.codehaus.plexus.util.cli.Commandline;
  * Super class of XMLAccess related goals, define the work follow of XMLAccess
  * execution
  * 
- * @author <a href="mailto:Juanyong.zhang@carefirst.com">Juanyong Zhang</a><br/>
+ * @author <a href="mailto:Juanyong.zhang@gmail.com">Juanyong Zhang</a><br/>
  */
 public abstract class AbstractXMLAccessMojo extends AbstractWebsphereMojo {
 	/**

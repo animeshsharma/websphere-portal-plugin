@@ -47,7 +47,7 @@ import org.apache.maven.plugins.annotations.Parameter;
  * /com/xyz/theme1/9.34.87/theme1-9.34.87.war</i> <br/>
  * 
  * 
- * @author <a href="mailto:Juanyong.zhang@carefirst.com">Juanyong Zhang</a><br/>
+ * @author <a href="mailto:Juanyong.zhang@gmail.com">Juanyong Zhang</a><br/>
  */
 @Mojo(name = "deploy-war", threadSafe = true)
 public class DeployWARMojo extends DeployEARMojo {

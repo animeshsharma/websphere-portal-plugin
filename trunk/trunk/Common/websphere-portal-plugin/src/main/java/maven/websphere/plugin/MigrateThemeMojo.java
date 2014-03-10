@@ -24,7 +24,7 @@ import org.apache.maven.plugins.annotations.Parameter;
  * <i>mvn clean websphere:migrate-theme -DsourceServer=was_box1
  * -DtargetServer=was_box2 -DuniqueName=com.xyz.theme1</i> <br/>
  * 
- * @author <a href="mailto:Juanyong.zhang@carefirst.com">Juanyong Zhang</a><br/>
+ * @author <a href="mailto:Juanyong.zhang@gmail.com">Juanyong Zhang</a><br/>
  * 
  */
 @Mojo(name = "migrate-theme", threadSafe = true)

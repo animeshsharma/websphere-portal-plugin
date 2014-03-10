@@ -7,7 +7,7 @@ import org.apache.maven.plugins.annotations.Parameter;
 /**
  * Super class of all the export mojos, defines the output file to be executed.
  * 
- * @author <a href="mailto:Juanyong.zhang@carefirst.com">Juanyong Zhang</a><br/>
+ * @author <a href="mailto:Juanyong.zhang@gmail.com">Juanyong Zhang</a><br/>
  * 
  */
 public abstract class AbstractExportMojo extends AbstractXMLAccessMojo {

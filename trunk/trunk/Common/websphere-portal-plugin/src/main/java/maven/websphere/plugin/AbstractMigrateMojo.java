@@ -17,7 +17,7 @@ import org.apache.maven.plugins.annotations.Parameter;
  * Super class of migrate mojo's, defines migration work flow for pages,portlet,
  * theme and urlmappings.
  * 
- * @author <a href="mailto:Juanyong.zhang@carefirst.com">Juanyong Zhang</a><br/>
+ * @author <a href="mailto:Juanyong.zhang@gmail.com">Juanyong Zhang</a><br/>
  */
 public abstract class AbstractMigrateMojo<ExportMojo extends AbstractExportMojo>
 		extends AbstractWebsphereMojo {

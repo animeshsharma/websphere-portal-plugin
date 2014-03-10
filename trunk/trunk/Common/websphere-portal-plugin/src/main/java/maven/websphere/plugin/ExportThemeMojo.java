@@ -30,7 +30,7 @@ import org.apache.maven.plugins.annotations.Parameter;
  * -DuniqueName=com.xyz.theme1</i> <br/>
  * 
  * 
- * @author <a href="mailto:Juanyong.zhang@carefirst.com">Juanyong Zhang</a><br/>
+ * @author <a href="mailto:Juanyong.zhang@gmail.com">Juanyong Zhang</a><br/>
  */
 @Mojo(name = "export-theme", threadSafe = true)
 public class ExportThemeMojo extends AbstractExportMojo {

@@ -31,7 +31,7 @@ import org.apache.maven.plugins.annotations.Parameter;
  * <i>mvn clean websphere:migrate-page -DsourceServer=was_box1
  * -DtargetServer=was_box2 -DuniqueName=com.xyz.page.home1 -Drecursion=false</i> <br/>
  * 
- * @author <a href="mailto:Juanyong.zhang@carefirst.com">Juanyong Zhang</a><br/>
+ * @author <a href="mailto:Juanyong.zhang@gmail.com">Juanyong Zhang</a><br/>
  * 
  */
 @Mojo(name = "migrate-page", threadSafe = true)

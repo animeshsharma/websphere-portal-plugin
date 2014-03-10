@@ -17,7 +17,7 @@ import org.xml.sax.InputSource;
 /**
  * Utility class to get the text content using xpath.
  * 
- * @author <a href="mailto:Juanyong.zhang@carefirst.com">Juanyong Zhang</a><br/>
+ * @author <a href="mailto:Juanyong.zhang@gmail.com">Juanyong Zhang</a><br/>
  */
 public class XQueryHelper {
 	public static String queryTextContent(String xml, String xquery) {

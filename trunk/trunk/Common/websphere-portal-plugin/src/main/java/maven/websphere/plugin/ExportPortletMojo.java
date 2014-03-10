@@ -45,7 +45,7 @@ import org.apache.maven.plugins.annotations.Parameter;
  * -DuniqueName=com.xyz.ptlt1,com.xyz.ptlt2</i> <br/>
  * 
  * 
- * @author <a href="mailto:Juanyong.zhang@carefirst.com">Juanyong Zhang</a><br/>
+ * @author <a href="mailto:Juanyong.zhang@gmail.com">Juanyong Zhang</a><br/>
  * 
  */
 @Mojo(name = "export-portlet", threadSafe = true)

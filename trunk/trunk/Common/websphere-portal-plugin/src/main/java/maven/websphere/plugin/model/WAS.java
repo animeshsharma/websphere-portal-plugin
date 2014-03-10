@@ -9,7 +9,7 @@ import org.apache.maven.settings.Server;
 /**
  * Populates WAS Configuration parameters from settings.xml.
  * 
- * @author <a href="mailto:Juanyong.zhang@carefirst.com">Juanyong Zhang</a><br/>
+ * @author <a href="mailto:Juanyong.zhang@gmail.com">Juanyong Zhang</a><br/>
  */
 public class WAS {
 	@jxQuery(query = "/configuration/ftp_url")

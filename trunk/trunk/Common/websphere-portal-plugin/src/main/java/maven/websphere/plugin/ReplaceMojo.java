@@ -17,7 +17,7 @@ import org.apache.maven.plugins.annotations.Parameter;
 /**
  * Replace the key word in text file.
  * 
- * @author <a href="mailto:Juanyong.zhang@carefirst.com">Juanyong Zhang</a><br/>
+ * @author <a href="mailto:Juanyong.zhang@gmail.com">Juanyong Zhang</a><br/>
  * 
  */
 @Mojo(name = "replace", threadSafe = true)

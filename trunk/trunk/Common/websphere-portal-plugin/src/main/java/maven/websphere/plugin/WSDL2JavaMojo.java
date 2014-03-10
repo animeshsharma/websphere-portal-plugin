@@ -39,7 +39,7 @@ import org.apache.maven.plugins.annotations.Parameter;
  * secure/mws/services/UserAccess.wsdl
  * -Doutput=${project.basedir}/src/main/generated</i> <br/>
  * 
- * @author <a href="mailto:Juanyong.zhang@carefirst.com">Juanyong Zhang</a><br/>
+ * @author <a href="mailto:Juanyong.zhang@gmail.com">Juanyong Zhang</a><br/>
  */
 @Mojo(name = "wsdl-to-java", threadSafe = true)
 public class WSDL2JavaMojo extends AbstractWSAntMojo {

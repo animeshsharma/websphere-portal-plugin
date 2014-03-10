@@ -31,7 +31,7 @@ import org.apache.maven.plugins.annotations.Parameter;
  * <i>mvn clean websphere:migrate-urlmapping -DsourceServer=was_box1
  * -DtargetServer=was_box2 -Dlabel=friend1</i> <br/>
  * 
- * @author <a href="mailto:Juanyong.zhang@carefirst.com">Juanyong Zhang</a><br/>
+ * @author <a href="mailto:Juanyong.zhang@gmail.com">Juanyong Zhang</a><br/>
  * 
  */
 @Mojo(name = "migrate-urlmapping", threadSafe = true)

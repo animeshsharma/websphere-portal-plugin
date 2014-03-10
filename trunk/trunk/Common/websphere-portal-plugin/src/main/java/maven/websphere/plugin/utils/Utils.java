@@ -7,7 +7,7 @@ import java.util.Properties;
 /**
  * Utility class to get the files without versions.
  * 
- * @author <a href="mailto:Juanyong.zhang@carefirst.com">Juanyong Zhang</a><br/>
+ * @author <a href="mailto:Juanyong.zhang@gmail.com">Juanyong Zhang</a><br/>
  */
 public class Utils {
 //	public static String getFileNameWithoutVersionFromInstallableApp(

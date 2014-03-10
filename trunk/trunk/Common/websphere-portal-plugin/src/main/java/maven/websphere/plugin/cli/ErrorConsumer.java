@@ -6,7 +6,7 @@ import org.codehaus.plexus.util.cli.StreamConsumer;
 /**
  * Utility class to capture error logs.
  * 
- * @author <a href="mailto:Juanyong.zhang@carefirst.com">Juanyong Zhang</a><br/>
+ * @author <a href="mailto:Juanyong.zhang@gmail.com">Juanyong Zhang</a><br/>
  */
 public class ErrorConsumer implements StreamConsumer {
 	private final Log log;

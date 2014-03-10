@@ -38,7 +38,7 @@ import org.apache.maven.plugins.annotations.Parameter;
  * <i>mvn clean websphere:import -DimportXML=c:/xmls/pages_portal1.xml</i> <br/>
  * 
  * 
- * @author <a href="mailto:Juanyong.zhang@carefirst.com">Juanyong Zhang</a><br/>
+ * @author <a href="mailto:Juanyong.zhang@gmail.com">Juanyong Zhang</a><br/>
  */
 @Mojo(name = "import", threadSafe = true)
 public class ImportMojo extends AbstractXMLAccessMojo {

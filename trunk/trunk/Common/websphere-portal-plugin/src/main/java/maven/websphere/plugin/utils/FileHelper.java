@@ -18,7 +18,7 @@ import org.apache.commons.lang.StringUtils;
 /**
  * Utility class to find and replace text in a file.
  * 
- * @author <a href="mailto:Juanyong.zhang@carefirst.com">Juanyong Zhang</a><br/>
+ * @author <a href="mailto:Juanyong.zhang@gmail.com">Juanyong Zhang</a><br/>
  */
 public class FileHelper {
 
