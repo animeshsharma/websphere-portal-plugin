@@ -3,7 +3,7 @@ package maven.websphere.plugin.tester;
 /**
  * Plugin Interface defines all the tasks that can be performed with maven-websphere-plugin. 
  * 
- * @author <a href="mailto:Juanyong.zhang@carefirst.com">Juanyong Zhang</a><br/>
+ * @author <a href="mailto:Juanyong.zhang@gmail.com">Juanyong Zhang</a><br/>
  */
 public interface WebspherePluginTesterIface {
 	public void deployEarFromSource() throws Exception;

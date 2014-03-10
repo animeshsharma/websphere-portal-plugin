@@ -10,7 +10,7 @@ import org.junit.Before;
 /**
  * Test class to validate the maven-websphere-plugin tasks.
  * 
- * @author <a href="mailto:Juanyong.zhang@carefirst.com">Juanyong Zhang</a><br/>
+ * @author <a href="mailto:Juanyong.zhang@gmail.com">Juanyong Zhang</a><br/>
  */
 public class WebspherePluginTester implements WebspherePluginTesterIface {
 
