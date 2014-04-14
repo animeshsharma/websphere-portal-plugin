@@ -1,8 +1,8 @@
 package maven.websphere.plugin.model;
 
-import jxquery.google.jxQuery;
-
 import org.apache.maven.settings.Server;
+
+import com.googlecode.jxquery.jxQuery;
 
 /**
  * Populates WPS Configuration parameters from settings.xml.

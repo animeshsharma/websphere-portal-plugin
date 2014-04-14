@@ -1,10 +1,11 @@
 package maven.websphere.plugin.model;
 
 import static maven.websphere.plugin.utils.Constants.SLASH;
-import jxquery.google.XMLPopulater;
-import jxquery.google.jxQuery;
 
 import org.apache.maven.settings.Server;
+
+import com.googlecode.jxquery.XMLPopulater;
+import com.googlecode.jxquery.jxQuery;
 
 /**
  * Populates WAS Configuration parameters from settings.xml.

@@ -10,11 +10,11 @@ import java.lang.reflect.Field;
 import java.util.HashMap;
 import java.util.Map;
 
-import jxquery.google.utils.ReflectionHelper;
-
 import org.apache.commons.beanutils.PropertyUtils;
 import org.apache.commons.io.IOUtils;
 import org.apache.commons.lang.StringUtils;
+
+import com.googlecode.jxquery.utils.ReflectionHelper;
 
 import freemarker.ext.beans.BeansWrapper;
 import freemarker.template.Configuration;
