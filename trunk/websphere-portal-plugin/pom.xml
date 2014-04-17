@@ -32,6 +32,42 @@
 		<ver_xerces>2.10.0</ver_xerces>
 	</properties>
 
+	<scm>
+		<url>scm:svn:https://websphere-portal-plugin.googlecode.com/svn/trunk/websphere-portal-plugin/</url>
+		<connection>scm:svn:https://websphere-portal-plugin.googlecode.com/svn/trunk/websphere-portal-plugin/</connection>
+		<developerConnection>scm:svn:https://websphere-portal-plugin.googlecode.com/svn/trunk/websphere-portal-plugin/</developerConnection>
+	</scm>
+
+	<distributionManagement>
+		<repository>
+			<id>sonatype-release</id>
+			<name>Sonatype Release Repository</name>
+			<url>https://oss.sonatype.org/service/local/staging/deploy/maven2</url>
+		</repository>
+		<snapshotRepository>
+			<id>sonatype-snapshots</id>
+			<name>Sonatype Snapshot Repository</name>
+			<url>https://oss.sonatype.org/content/repositories/snapshots</url>
+		</snapshotRepository>
+	</distributionManagement>
+
+	<licenses>
+		<license>
+			<name>The Apache Software License, Version 2.0</name>
+			<url>http://www.apache.org/licenses/LICENSE-2.0.txt</url>
+			<distribution>repo</distribution>
+		</license>
+	</licenses>
+
+	<developers>
+		<developer>
+			<name>Juanyong Zhang</name>
+			<id>jzhang</id>
+			<email>Juanyong.zhagn@gmail.com</email>
+		</developer>
+	</developers>
+
+
 	<dependencies>
 		<dependency>
 			<groupId>xerces</groupId>
@@ -165,8 +201,54 @@
 			</plugin>
 			<plugin>
 				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-source-plugin</artifactId>
+				<version>${ver_maven-source-plugin}</version>
+				<executions>
+					<execution>
+						<id>attach-sources</id>
+						<phase>verify</phase>
+						<goals>
+							<goal>jar</goal>
+						</goals>
+					</execution>
+				</executions>
+			</plugin>
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
 				<artifactId>maven-javadoc-plugin</artifactId>
 				<version>${ver_maven-javadoc-plugin}</version>
+				<executions>
+					<execution>
+						<id>attach-javadocs</id>
+						<phase>verify</phase>
+						<goals>
+							<goal>jar</goal>
+						</goals>
+					</execution>
+				</executions>
+			</plugin>
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-scm-plugin</artifactId>
+				<version>${ver_maven-scm-plugin}</version>
+				<configuration>
+					<username>${googlecode_svn_username}</username>
+					<password>${googlecode_svn_password}</password>
+				</configuration>
+			</plugin>
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-gpg-plugin</artifactId>
+				<version>${ver_maven-gpg-plugin}</version>
+				<executions>
+					<execution>
+						<id>sign-artifacts</id>
+						<phase>verify</phase>
+						<goals>
+							<goal>sign</goal>
+						</goals>
+					</execution>
+				</executions>
 			</plugin>
 		</plugins>
 	</build>
