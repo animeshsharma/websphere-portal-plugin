@@ -28,8 +28,11 @@
 		<ver_wagon-ftp>2.6</ver_wagon-ftp>
 		<ver_wagon-maven-plugin>1.0-beta-4</ver_wagon-maven-plugin>
 		<ver_wagon-http>2.6</ver_wagon-http>
-		<ver_maven-javadoc-plugin>2.8</ver_maven-javadoc-plugin>
 		<ver_xerces>2.10.0</ver_xerces>
+		<ver_maven-source-plugin>2.2.1</ver_maven-source-plugin>
+		<ver_maven-javadoc-plugin>2.9.1</ver_maven-javadoc-plugin>
+		<ver_maven-gpg-plugin>1.5</ver_maven-gpg-plugin>
+		<ver_maven-scm-plugin>1.9</ver_maven-scm-plugin>
 	</properties>
 
 	<scm>
