@@ -6,6 +6,11 @@
 	<artifactId>websphere-portal-plugin</artifactId>
 	<version>1.0.0</version>
 	<packaging>maven-plugin</packaging>
+	<name>websphere-portal-plugin</name>
+	<url>http://websphere-portal-plugin.googlecode.com</url>
+	<description>websphere portal plugin</description>
+
+
 
 	<properties>
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
@@ -173,12 +178,6 @@
 			<artifactId>junit</artifactId>
 			<version>${ver_junit}</version>
 			<scope>test</scope>
-		</dependency>
-
-		<dependency>
-			<groupId>org.apache.maven.plugins</groupId>
-			<artifactId>maven-deploy-plugin</artifactId>
-			<version>2.8.1</version>
 		</dependency>
 	</dependencies>
 
