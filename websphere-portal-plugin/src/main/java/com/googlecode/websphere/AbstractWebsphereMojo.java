@@ -158,10 +158,12 @@ public abstract class AbstractWebsphereMojo extends AbstractMojo {
 				ResourceUtils.copyJarResourceToDirectory(resourceManager,
 						shared.getURL().toString(), assetsDir.getPath());
 
-				PlexusResource asset = resourceManager.getResource(getWas()
-						.getVersion() + SLASH + getMode());
-				ResourceUtils.copyJarResourceToDirectory(resourceManager, asset
-						.getURL().toString(), assetsDir.getPath());
+				if(null!=getWas()){
+					PlexusResource asset = resourceManager.getResource(getWas()
+							.getVersion() + SLASH + getMode());
+					ResourceUtils.copyJarResourceToDirectory(resourceManager, asset
+							.getURL().toString(), assetsDir.getPath());
+				}
 			} catch (ResourceNotFoundException e) {
 				getLog().error(e);
 				throw new MojoExecutionException(
