@@ -6,7 +6,7 @@
 			url="${url}"
 			output="${output}"
 			verbose="true"
-			role="<#if role??>${role}<#else>develop-client</#if>"
+			role="<#if role??>${role}<#else>deploy-client</#if>"
 			<#if inputMappingFile??>inputMappingFile="${inputMappingFile}"<#else></#if>	<#--String-->
 			<#if container??>container="${container}"<#else></#if>	<#--String-->
 			<#if debug??>debug="${debug}"<#else></#if>	<#--String-->
