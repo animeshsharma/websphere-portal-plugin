@@ -18,28 +18,28 @@ import com.googlecode.websphere.utils.MappedField;
  * The wsdl-to-java task creates Java classes and deployment descriptor
  * templates from a Web Services Description Language (WSDL) file. This task is
  * a wrapper the com.ibm.websphere.ant.tasks.WSDL2Java, Refer to the IBM
- * documentation for information on the valid options available. <br/>
- * <br/>
+ * documentation for information on the valid options available. <br>
+ * <br>
  * 
- * <i>&lt;wsdl2javatask url=&quot;location of input WSDL document&quot; <br/>
- * output=&quot;root directory for emitted files&quot; <br/>
- * role=&quot;J2EE development role&quot; <br/>
- * container=&quot;j2ee container&quot; <br/>
- * genjava=&quot;generate java files&quot;/&gt;</i> <br/>
- * <br/>
+ * <i>&lt;wsdl2javatask url=&quot;location of input WSDL document&quot; <br>
+ * output=&quot;root directory for emitted files&quot; <br>
+ * role=&quot;J2EE development role&quot; <br>
+ * container=&quot;j2ee container&quot; <br>
+ * genjava=&quot;generate java files&quot;/&gt;</i> <br>
+ * <br>
  * 
  * 
- * <b>Usages:</b> <br/>
- * 1. Generate Java classes base by WSDL <br/>
+ * <b>Usages:</b> <br>
+ * 1. Generate Java classes base by WSDL <br>
  * 
  * 
  * <i>mvn clean websphere:wsdl-to-java package
  * -DwasHome=C:/IBM/WebSphere/AppServer
  * -Durl=http://memsvcuser:M3msvcus3r@dveweb1/
  * secure/mws/services/UserAccess.wsdl
- * -Doutput=${project.basedir}/src/main/generated</i> <br/>
+ * -Doutput=${project.basedir}/src/main/generated</i> <br>
  * 
- * @author <a href="mailto:Juanyong.zhang@gmail.com">Juanyong Zhang</a><br/>
+ * @author <a href="mailto:Juanyong.zhang@gmail.com">Juanyong Zhang</a><br>
  */
 @Mojo(name = "wsdl-to-java", threadSafe = true)
 public class WSDL2JavaMojo extends AbstractWSAntMojo {

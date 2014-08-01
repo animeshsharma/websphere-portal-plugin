@@ -5,7 +5,7 @@ import java.util.Locale;
 /**
  * Condition that tests the OS type.
  * 
- * @author <a href="mailto:Juanyong.zhang@gmail.com">Juanyong Zhang</a><br/>
+ * @author <a href="mailto:Juanyong.zhang@gmail.com">Juanyong Zhang</a><br>
  */
 public final class OS {
 	private static final String FAMILY_OS_400 = "os/400";

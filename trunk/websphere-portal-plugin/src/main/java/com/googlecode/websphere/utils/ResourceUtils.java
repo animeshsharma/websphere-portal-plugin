@@ -25,7 +25,7 @@ import org.codehaus.plexus.resource.loader.ResourceNotFoundException;
 /**
  * Extracts jar/zip/war/wsjar resources.
  * 
- * @author : <a href="mailto:Juanyong.zhang@gmail.com">Juanyong.Zhang</a><br/>
+ * @author : <a href="mailto:Juanyong.zhang@gmail.com">Juanyong.Zhang</a><br>
  */
 public abstract class ResourceUtils {
 	public static final String FILE_URL_PREFIX = "file:";

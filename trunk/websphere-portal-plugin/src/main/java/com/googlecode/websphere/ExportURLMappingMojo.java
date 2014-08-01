@@ -17,31 +17,31 @@ import com.googlecode.websphere.model.ScriptTemplatePair;
  * The export-urlmapping task enables you to export the WebSphere urlmapping
  * based on Uniquename or label. This task is a wrapper for the XMLAccess
  * command of the WebSphere Portal. Refer to the WebSphere Portal documentation
- * for more information. <br/>
+ * for more information. <br>
  * 
  * 
- * <br/>
- * <br/>
+ * <br>
+ * <br>
  * 
  * 
- * <b>Usages:</b> <br/>
+ * <b>Usages:</b> <br>
  * 
  * 
- * 1. Export URL Mapping by uniqueName <br/>
+ * 1. Export URL Mapping by uniqueName <br>
  * 
  * 
  * <i>mvn clean websphere:urlmapping -Dserver=was_box1
- * -DuniqueName=com.xyz.urlmapping.friend1</i> <br/>
+ * -DuniqueName=com.xyz.urlmapping.friend1</i> <br>
  * 
  * 
- * 2. Export URL Mapping by label <br/>
+ * 2. Export URL Mapping by label <br>
  * 
  * 
- * <i>mvn clean websphere:urlmapping -Dserver=was_box1 -Dlabel=friend1</i> <br/>
+ * <i>mvn clean websphere:urlmapping -Dserver=was_box1 -Dlabel=friend1</i> <br>
  * 
  * 
  * 
- * @author <a href="mailto:Juanyong.zhang@gmail.com">Juanyong Zhang</a><br/>
+ * @author <a href="mailto:Juanyong.zhang@gmail.com">Juanyong Zhang</a><br>
  */
 @Mojo(name = "export-urlmapping", threadSafe = true)
 public class ExportURLMappingMojo extends AbstractExportMojo {

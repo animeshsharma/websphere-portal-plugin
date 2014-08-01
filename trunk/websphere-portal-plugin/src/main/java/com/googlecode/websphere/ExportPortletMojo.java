@@ -21,31 +21,31 @@ import com.googlecode.websphere.utils.Constants;
  * The export-portlet task enables you to export the WebSphere portlet(s) based
  * on UniqueName(s). This task is a wrapper for the XMLAccess command of the
  * WebSphere Portal. Refer to the WebSphere Portal documentation for more
- * information. <br/>
+ * information. <br>
  * 
  * 
- * <br/>
- * <br/>
+ * <br>
+ * <br>
  * 
  * 
- * <b>Usages:</b> <br/>
+ * <b>Usages:</b> <br>
  * 
  * 
- * 1. Export single portlet <br/>
- * 
- * 
- * <i>mvn clean websphere:export-portlet -Dserver=was_box1
- * -DuniqueName=com.xyz.ptlt1</i> <br/>
- * 
- * 
- * 2. Export multi portlets <br/>
+ * 1. Export single portlet <br>
  * 
  * 
  * <i>mvn clean websphere:export-portlet -Dserver=was_box1
- * -DuniqueName=com.xyz.ptlt1,com.xyz.ptlt2</i> <br/>
+ * -DuniqueName=com.xyz.ptlt1</i> <br>
  * 
  * 
- * @author <a href="mailto:Juanyong.zhang@gmail.com">Juanyong Zhang</a><br/>
+ * 2. Export multi portlets <br>
+ * 
+ * 
+ * <i>mvn clean websphere:export-portlet -Dserver=was_box1
+ * -DuniqueName=com.xyz.ptlt1,com.xyz.ptlt2</i> <br>
+ * 
+ * 
+ * @author <a href="mailto:Juanyong.zhang@gmail.com">Juanyong Zhang</a><br>
  * 
  */
 @Mojo(name = "export-portlet", threadSafe = true)

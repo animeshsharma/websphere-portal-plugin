@@ -16,42 +16,42 @@ import org.apache.maven.plugins.annotations.Parameter;
  * The deploy-multi-portlet task enables you to install multiable portlets into
  * a WebSphere Portal Server. This task is a wrapper for the XMLAccess command
  * of the WebSphere Portal. Refer to the WebSphere Portal documentation for more
- * information. <br/>
+ * information. <br>
  * 
  * 
- * <br/>
- * <br/>
+ * <br>
+ * <br>
  * 
  * 
- * <b>Usages:</b> <br/>
+ * <b>Usages:</b> <br>
  * 
  * 
- * 1. Deploy multi portlets: <br/>
+ * 1. Deploy multi portlets: <br>
  * 
  * 
  * <i>mvn clean websphere:deploy-multi-portlet -Dserver=was_box1
- * -DinstallableApps=C:/dist/portlet1.war,C:/dist/portlet2.war</i> <br/>
+ * -DinstallableApps=C:/dist/portlet1.war,C:/dist/portlet2.war</i> <br>
  * 
  * 
  * 2. Deploy multi portlets with customer uniqueNames, with comma seperated
- * uniqueNames args: <br/>
+ * uniqueNames args: <br>
  * 
  * 
  * <i>mvn clean websphere:deploy-multi-portlet -Dserver=was_box1
  * -DinstallableApps=C:/dist/portlet1.war,C:/dist/portlet2.war
- * -DuniqueNames=com.xyz.plt1,com.xyz.plt1</i> <br/>
+ * -DuniqueNames=com.xyz.plt1,com.xyz.plt1</i> <br>
  * 
  * 
- * 3. Deploy multi portlets from Nexus <br/>
+ * 3. Deploy multi portlets from Nexus <br>
  * 
  * 
  * <i>mvn clean websphere:deploy-multi-portlet -Dserver=was_box1
  * -DinstallableApps
  * =http://stype-nexus:8081/nexus/content/repositories/releases /com/xyz/ptl1
  * /9.34.87/ptl1-9.34.87.war,http://stype-nexus:8081/nexus/content
- * /repositories/releases/com/xyz/ptl2/9.34.87/ptl2-9.34.87.war</i> <br/>
+ * /repositories/releases/com/xyz/ptl2/9.34.87/ptl2-9.34.87.war</i> <br>
  * 
- * @author <a href="mailto:Juanyong.zhang@gmail.com">Juanyong Zhang</a><br/>
+ * @author <a href="mailto:Juanyong.zhang@gmail.com">Juanyong Zhang</a><br>
  */
 @Mojo(name = "deploy-multi-portlet", threadSafe = true)
 public class DeployMultiPortletMojo extends

@@ -8,7 +8,7 @@ import org.apache.maven.plugin.MojoFailureException;
 import org.apache.maven.plugins.annotations.Parameter;
 
 /**
- * @author <a href="mailto:Juanyong.zhang@gmail.com">Juanyong Zhang</a><br/>
+ * @author <a href="mailto:Juanyong.zhang@gmail.com">Juanyong Zhang</a><br>
  */
 public abstract class AbstractMultiDeployMojo<DeployMojo extends DeployMojoIface>
 		extends AbstractWebsphereMojo {

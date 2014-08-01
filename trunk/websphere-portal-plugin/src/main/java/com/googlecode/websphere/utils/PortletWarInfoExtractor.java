@@ -10,7 +10,7 @@ import org.apache.commons.lang.StringUtils;
 /**
  * Extracts Portlet Info from war file.
  * 
- * @author <a href="mailto:Juanyong.zhang@gmail.com">Juanyong Zhang</a><br/>
+ * @author <a href="mailto:Juanyong.zhang@gmail.com">Juanyong Zhang</a><br>
  */
 public class PortletWarInfoExtractor implements Constants {
 

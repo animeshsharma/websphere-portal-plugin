@@ -1,6 +1,7 @@
 package com.googlecode.websphere;
 
 import java.io.File;
+import java.net.MalformedURLException;
 import java.util.HashMap;
 import java.util.Map;
 
@@ -21,43 +22,43 @@ import com.googlecode.websphere.utils.FileHelper;
  * valid options available during application installation.
  * 
  * 
- * <br/>
- * <br/>
+ * <br>
+ * <br>
  * 
  * 
- * <b>Usages:</b> <br/>
+ * <b>Usages:</b> <br>
  * 
  * 
- * 1. Build and Deploy EAR Application <br/>
+ * 1. Build and Deploy EAR Application <br>
  * 
  * 
  * <i>mvn clean package websphere:deploy-ear -Dserver=was_box1
- * -DwasHome=C:\IBM\WebSphere\AppServer</i> <br/>
+ * -DwasHome=C:\IBM\WebSphere\AppServer</i> <br>
  * 
  * 
- * 2. Deploy an existing EAR Application <br/>
+ * 2. Deploy an existing EAR Application <br>
  * 
  * 
  * <i>mvn clean websphere:deploy-ear -Dserver=was_box1
  * -DwasHome=C:\IBM\WebSphere\AppServer
- * -DinstallableApp=C:\dist\BusinessDomainServices.ear<o :p></o:p></i> <br/>
+ * -DinstallableApp=C:\dist\BusinessDomainServices.ear</i><br>
  * 
  * 
- * 3. Deploy an EAR Application from Nexus <br/>
+ * 3. Deploy an EAR Application from Nexus <br>
  * 
  * 
  * <i>mvn clean websphere:deploy-ear -Dserver=was_box1
  * -DwasHome=C:\IBM\WebSphere\AppServer -DinstallableApp
  * =http://stype-nexus:8081/nexus/content/repositories/releases
  * /com/xyz/BusinessDomainServices/9.34.87/BusinessDomainServices-9.34.87.ear
- * -DappName=BusinessDomainServices</i> <br/>
+ * -DappName=BusinessDomainServices</i><br>
  * 
  * 
  * 
- * <br/>
- * <br/>
+ * <br>
+ * <br>
  * 
- * @author <a href="mailto:Juanyong.zhang@gmail.com">Juanyong Zhang</a><br/>
+ * @author <a href="mailto:Juanyong.zhang@gmail.com">Juanyong Zhang</a><br>
  */
 
 @Mojo(name = "deploy-ear", threadSafe = true)
@@ -119,7 +120,12 @@ public class DeployEARMojo extends AbstractWSAntMojo {
 
 		// Download installable file to temp file or prepare local file
 		localFile = prepareLocalFile(installableApp);
-		nameValuePairs.put(FTL_INSTALLABLEAPP, localFile.getPath());
+		try {
+			nameValuePairs.put(FTL_INSTALLABLEAPP, localFile.toURI().toURL());
+		} catch (MalformedURLException e) {
+			throw new MojoExecutionException("Installable File not found : "
+					+ localFile.getPath(), e);
+		}
 		nameValuePairs.put(FTL_WAS_CONNTYPE, getWas().getConntype());
 		nameValuePairs.put(FTL_WAS_HOST, getWas().getHost());
 		nameValuePairs.put(FTL_WAS_PORT, getWas().getPort());

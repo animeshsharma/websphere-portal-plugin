@@ -8,30 +8,30 @@ import org.apache.maven.plugins.annotations.Parameter;
  * The migrate-urlmapping task enables you to migrate XMLAccess Urlmapping XML
  * from source WPS server to target WPS server. This task is a wrapper for the
  * XMLAccess command of the WebSphere Portal. Refer to the WebSphere Portal
- * documentation for more information. <br/>
+ * documentation for more information. <br>
  * 
  * 
- * <br/>
- * <br/>
+ * <br>
+ * <br>
  * 
  * 
- * <b>Usages:</b> <br/>
+ * <b>Usages:</b> <br>
  * 
  * 
- * 1. Migrate urlmapping from was_box1 to was_box2 by uniqueName <br/>
- * 
- * 
- * <i>mvn clean websphere:migrate-urlmapping -DsourceServer=was_box1
- * -DtargetServer=was_box2 -DuniqueName=com.xyz.urlmapping.friend1</i> <br/>
- * 
- * 
- * 2. Migrate URL Mapping by label <br/>
+ * 1. Migrate urlmapping from was_box1 to was_box2 by uniqueName <br>
  * 
  * 
  * <i>mvn clean websphere:migrate-urlmapping -DsourceServer=was_box1
- * -DtargetServer=was_box2 -Dlabel=friend1</i> <br/>
+ * -DtargetServer=was_box2 -DuniqueName=com.xyz.urlmapping.friend1</i> <br>
  * 
- * @author <a href="mailto:Juanyong.zhang@gmail.com">Juanyong Zhang</a><br/>
+ * 
+ * 2. Migrate URL Mapping by label <br>
+ * 
+ * 
+ * <i>mvn clean websphere:migrate-urlmapping -DsourceServer=was_box1
+ * -DtargetServer=was_box2 -Dlabel=friend1</i> <br>
+ * 
+ * @author <a href="mailto:Juanyong.zhang@gmail.com">Juanyong Zhang</a><br>
  * 
  */
 @Mojo(name = "migrate-urlmapping", threadSafe = true)

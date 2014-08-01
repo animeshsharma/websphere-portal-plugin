@@ -4,7 +4,7 @@
 
 	<groupId>com.googlecode.websphere-portal-plugin</groupId>
 	<artifactId>websphere-portal-plugin</artifactId>
-	<version>1.0.0</version>
+	<version>1.0.1</version>
 	<packaging>maven-plugin</packaging>
 	<name>websphere-portal-plugin</name>
 	<url>http://websphere-portal-plugin.googlecode.com</url>

@@ -5,6 +5,7 @@ import static com.googlecode.websphere.utils.Constants.SLASH;
 import java.io.File;
 import java.io.IOException;
 import java.io.InputStream;
+import java.net.MalformedURLException;
 import java.util.HashMap;
 import java.util.Map;
 import java.util.Properties;
@@ -28,45 +29,45 @@ import com.googlecode.websphere.utils.PortletWarInfoExtractor;
  * The deploy-portlet task enables you to install portlet into a WebSphere
  * Portal Server. This task is a wrapper for the XMLAccess command of the
  * WebSphere Portal. Refer to the WebSphere Portal documentation for more
- * information. <br/>
+ * information. <br>
  * 
  * 
- * <br/>
- * <br/>
+ * <br>
+ * <br>
  * 
  * 
- * <b>Usages:</b> <br/>
+ * <b>Usages:</b> <br>
  * 
  * 
- * 1. Build and deploy a portlet <br/>
+ * 1. Build and deploy a portlet <br>
  * 
  * 
- * <i>mvn clean package websphere:deploy-portlet -Dserver=was_box1</i> <br/>
+ * <i>mvn clean package websphere:deploy-portlet -Dserver=was_box1</i> <br>
  * 
  * 
- * 2. Deploy an existing portlet: <br/>
- * 
- * 
- * <i>mvn clean websphere:deploy-portlet -Dserver=was_box1
- * -DinstallableApp=C:/dist/portlet1.war</i> <br/>
- * 
- * 
- * 3. Deploy portlet with customer uniqueNames <br/>
+ * 2. Deploy an existing portlet: <br>
  * 
  * 
  * <i>mvn clean websphere:deploy-portlet -Dserver=was_box1
- * -DinstallableApp=C:/dist/portlet1.war -DuniqueNames=com.xyz.plt1</i> <br/>
+ * -DinstallableApp=C:/dist/portlet1.war</i> <br>
  * 
  * 
- * 4. Deploy portlet from Nexus <br/>
+ * 3. Deploy portlet with customer uniqueNames <br>
+ * 
+ * 
+ * <i>mvn clean websphere:deploy-portlet -Dserver=was_box1
+ * -DinstallableApp=C:/dist/portlet1.war -DuniqueNames=com.xyz.plt1</i> <br>
+ * 
+ * 
+ * 4. Deploy portlet from Nexus <br>
  * 
  * 
  * <i>mvn clean websphere:deploy-portlet -Dserver=was_box1 -DinstallableApp
  * =http://stype-nexus:8081/nexus/content/repositories/releases
- * /com/xyz/ptl1/9.34.87/ptl1-9.34.87.war</i> <br/>
+ * /com/xyz/ptl1/9.34.87/ptl1-9.34.87.war</i> <br>
  * 
  * 
- * @author <a href="mailto:Juanyong.zhang@gmail.com">Juanyong Zhang</a><br/>
+ * @author <a href="mailto:Juanyong.zhang@gmail.com">Juanyong Zhang</a><br>
  */
 @Mojo(name = "deploy-portlet", threadSafe = true)
 public class DeployPortletMojo extends AbstractXMLAccessMojo implements
@@ -133,9 +134,15 @@ public class DeployPortletMojo extends AbstractXMLAccessMojo implements
 			// Upload Portlet war to FTP
 			remoteFile = createTempRemoteFile();
 			putToFTP(getWas(), localFile, remoteFile);
-			path = remoteFile;
+			path = "file://"+remoteFile;
 		} else {
-			path = localFile.getPath();
+			try {
+				path = localFile.toURI().toURL().toString();
+			} catch (MalformedURLException e) {
+				throw new MojoExecutionException(
+						"Installable File not found : " + localFile.getPath(),
+						e);
+			}
 		}
 		return path;
 	}
