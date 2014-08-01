@@ -18,7 +18,7 @@ import com.googlecode.websphere.model.WAS;
  * Utility class to deal with FTP realted tasks such as opening a connection and
  * deleting a file/directory from FTP server.
  * 
- * @author <a href="mailto:Juanyong.zhang@gmail.com">Juanyong Zhang</a><br/>
+ * @author <a href="mailto:Juanyong.zhang@gmail.com">Juanyong Zhang</a><br>
  */
 public class FtpWrapper {
 	private FTPClient ftp;

@@ -6,7 +6,7 @@ import org.apache.commons.lang.StringUtils;
  * XMLAccessScriptPair for enumerate all the xmlaccess script template and it is
  * output form
  * 
- * @author <a href="mailto:Juanyong.zhang@gmail.com">Juanyong Zhang</a><br/>
+ * @author <a href="mailto:Juanyong.zhang@gmail.com">Juanyong Zhang</a><br>
  */
 public enum ScriptTemplatePair {
 

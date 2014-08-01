@@ -28,13 +28,12 @@ import com.googlecode.websphere.utils.OS;
  * Super class of XMLAccess related goals, define the work follow of XMLAccess
  * execution
  * 
- * @author <a href="mailto:Juanyong.zhang@gmail.com">Juanyong Zhang</a><br/>
+ * @author <a href="mailto:Juanyong.zhang@gmail.com">Juanyong Zhang</a><br>
  */
 public abstract class AbstractXMLAccessMojo extends AbstractWebsphereMojo {
 
 	/**
 	 * Do clean up jobs
-	 * 
 	 * @since 1.0.3
 	 */
 	protected void cleanUp() throws MojoExecutionException {
@@ -66,6 +65,7 @@ public abstract class AbstractXMLAccessMojo extends AbstractWebsphereMojo {
 			cleanUp();
 		}
 	}
+	
 
 	private Commandline generateXMLAccessCli() throws MojoExecutionException {
 		Commandline cli = new Commandline();
@@ -121,7 +121,7 @@ public abstract class AbstractXMLAccessMojo extends AbstractWebsphereMojo {
 
 	/**
 	 * To add or replace freemarker NameValuePairs in xmlacess batch file
-	 * 
+	 * @return Map of CustomXMLAccessCliNameValuePairs
 	 * @since 1.0.3
 	 */
 	protected Map<Object, Object> getCustomXMLAccessCliNameValuePairs() {

@@ -22,23 +22,23 @@ import com.googlecode.websphere.utils.FileHelper;
  * 
  * The import task enables you to import a XMLAccess XML into WebSphere Portal.
  * This task is a wrapper for the XMLAccess command of the WebSphere Portal.
- * Refer to the WebSphere Portal documentation for more information. <br/>
+ * Refer to the WebSphere Portal documentation for more information. <br>
  * 
  * 
- * <br/>
- * <br/>
+ * <br>
+ * <br>
  * 
  * 
- * <b>Usages:</b> <br/>
+ * <b>Usages:</b> <br>
  * 
  * 
- * 1. Import a XMLAccess XML <br/>
+ * 1. Import a XMLAccess XML <br>
  * 
  * 
- * <i>mvn clean websphere:import -DimportXML=c:/xmls/pages_portal1.xml</i> <br/>
+ * <i>mvn clean websphere:import -DimportXML=c:/xmls/pages_portal1.xml</i> <br>
  * 
  * 
- * @author <a href="mailto:Juanyong.zhang@gmail.com">Juanyong Zhang</a><br/>
+ * @author <a href="mailto:Juanyong.zhang@gmail.com">Juanyong Zhang</a><br>
  */
 @Mojo(name = "import", threadSafe = true)
 public class ImportMojo extends AbstractXMLAccessMojo {

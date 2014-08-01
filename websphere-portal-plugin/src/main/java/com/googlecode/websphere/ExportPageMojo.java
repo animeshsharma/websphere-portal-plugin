@@ -13,32 +13,32 @@ import com.googlecode.websphere.model.ScriptTemplatePair;
  * 
  * The export-page task enables you to export the WebSphere Portal Page based on
  * UniqueName. This task is a wrapper for the XMLAccess command of the WebSphere
- * Portal. Refer to the WebSphere Portal documentation for more information. <br/>
+ * Portal. Refer to the WebSphere Portal documentation for more information. <br>
  * 
  * 
- * <br/>
- * <br/>
+ * <br>
+ * <br>
  * 
  * 
- * <b>Usages:</b> <br/>
+ * <b>Usages:</b> <br>
  * 
  * 
- * 1. Export Page <br/>
- * 
- * 
- * <i>mvn clean websphere:export-page -Dserver=was_box1
- * -DuniqueName=com.xyz.page.home1</i> <br/>
- * 
- * 
- * 2. Export Page without Children <br/>
+ * 1. Export Page <br>
  * 
  * 
  * <i>mvn clean websphere:export-page -Dserver=was_box1
- * -DuniqueName=com.xyz.page.home1 -Drecursion=false</i> <br/>
+ * -DuniqueName=com.xyz.page.home1</i> <br>
+ * 
+ * 
+ * 2. Export Page without Children <br>
+ * 
+ * 
+ * <i>mvn clean websphere:export-page -Dserver=was_box1
+ * -DuniqueName=com.xyz.page.home1 -Drecursion=false</i> <br>
  * 
  * 
  * 
- * @author <a href="mailto:Juanyong.zhang@gmail.com">Juanyong Zhang</a><br/>
+ * @author <a href="mailto:Juanyong.zhang@gmail.com">Juanyong Zhang</a><br>
  */
 @Mojo(name = "export-page", threadSafe = true)
 public class ExportPageMojo extends AbstractExportMojo {

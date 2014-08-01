@@ -4,7 +4,7 @@
 	create-oids="false">
 	<portal action="locate">
 		<web-app action="update" active="true" uniquename="${portlet_uid}.webmod" uid="${portlet_uid}.webmod">
-			<url>file://${installableApp}</url>
+			<url>${installableApp}</url>
 		</web-app>
 	</portal>
 </request>
